@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Introduction to JS: Functions</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="link">Concept</a></li>
+                <li class="nav-item"><a href="./assignment.html" class="link">Assignment</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <section class="concept">
+            <h2 class="title">Concept: Functions</h2>
+
+            <p class="paragraph">Up to this point, the majority. of the functions used in these exercises have executed logic and nothing else. In the Array lesson, you saw the <code class="inline">pop()</code> and <code class="inline">shift()</code> methods. If you look back, these methods returned a value that we could assign to a variable to hold that value for later use.</p>
+
+            <p class="paragraph">In this lesson, we're going to dive deeper into functions.</p>
+
+            <h3 class="sub-title">What are functions?</h3>
+
+            <p class="paragraph">In JavaScript, a function is a block of code designed to perform a particular task. Functions are executed when they are called, also known as invoking the function. You can define a function using the function keyword followed by a name, parentheses <code class="inline">()</code>, and a block of code enclosed in curly braces <code class="inline">{}</code>. For example:
+            </p>
+            
+<code class="block">function greet() {
+    console.log('Hello, World!');
+}
+</code>
+
+            <h3 class="sub-title">Return Functions</h3>
+
+            <p class="paragraph">Functions can also return values using the <code class="inline">return</code> statement. This allows the function to send a value back to the caller. For example:
+            </p>
+
+<code class="block">function add(num1, num2) {
+    return num1 + num2;
+}
+</code>
+
+            <p class="paragraph">In this example, the add function takes two parameters, <code class="inline">num1</code> and <code class="inline">num2</code>, and returns their sum. You can store the result in a variable like this:</p>
+
+<code class="block">let sum = add(2, 4);
+console.log(sum);        // Output: 6  
+</code>
+
+            <h3 class="sub-title">Default Parameters</h3>
+            <p class="paragraph">JavaScript functions can have default parameter values. This means that if no argument is provided for a parameter, the default value is used. For example:</p>
+
+<code class="block">function greet(name = 'Guest') {
+    console.log('Hello, ' + name + '!');
+}
+
+greet();         // Output: "Hello, Guest!"
+greet("Dan");    // Output: "Hello, Dan!"
+</code>
+
+            <p class="paragraph">In this example, if you call <code class="inline">greet()</code> without any arguments, it will use 'Guest' as the default value and log 'Hello, Guest!' to the console.</p>
+
+
+            <h3 class="sub-title">Arrow Functions</h3>
+            <p class="paragraph">You may have seen arrow functions in existing code. I will cover them briefly. For the time being we will be defining functions the same way as in previous exercises.</p>
+
+            <p class="paragraph">Arrow functions provide a more concise syntax for writing functions in JavaScript. They are defined using the => syntax. For example:</p>
+
+<code class="block">const greet = (name) => {
+    return 'Hello, ' + name + '!';
+};    
+</code>
+
+            <p class="paragraph">Arrow functions are especially useful for short functions. If the function body contains only a single expression, you can omit the curly braces and the return keyword:</p>
+
+<code class="block">const greet = (num1, num2) => a + b;
+</code>
+            
+            <p class="paragraph">
+                It is highly recommended to read through the following documentation in the order listed.
+            </p>
+            <ol class="list ordered">
+                <li class="list-item"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" class="text-link">An Overview of Functions</a></li>
+                <li class="list-item"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" class="text-link">Examples of Functions</a></li>
+            </ol>
+
+            
+            <h3 class="sub-title">Experiment Time</h3>
+            
+            <p class="paragraph">Open <code class="inline">index.js</code> and try the following:</p>
+            
+            <ul class="list">
+                <li class="list-item">Create some functions return a value and log that value to the console.</li>
+                <li class="list-item">Create some functions that take in arguments. Try to write at one least one that returns a value and one that doesn't.</li>
+                <li class="list-item">Create some functions that take in arguments, but also have default parameters.</li>
+                <li class="list-item">Write any questions that may arise in this experiment and we can discuss them in class.</li>
+            </ul>
+
+            <p class="paragraph">Once you are done experimenting, comment out your code.</p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- include the script at the end of the body -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
